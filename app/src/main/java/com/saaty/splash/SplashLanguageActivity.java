@@ -21,6 +21,7 @@ import com.saaty.home.HomeActivity;
 import com.saaty.loginAndRegister.LoginTraderUserActivity;
 import com.saaty.models.Data;
 import com.saaty.models.UserModel;
+import com.saaty.sideMenuScreen.SettingActivity;
 import com.saaty.util.BaseActivity;
 import com.saaty.util.PreferenceHelper;
 
@@ -75,7 +76,8 @@ public class SplashLanguageActivity extends BaseActivity {
         lang_selected = "ar";
         PreferenceHelper.setValue(getApplicationContext(),lang_selected);
         PreferenceHelper.setFirstTimeValue(this,false);
-        setConfig(getApplicationContext(),lang_selected);
+//        setConfig(getApplicationContext(),lang_selected);
+        setNewLocale(SplashLanguageActivity.this, lang_selected);
         Intent intent=new Intent(getApplicationContext(), LoginTraderUserActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         Log.v("TAG","sssss"+lang_selected);
@@ -88,7 +90,8 @@ public class SplashLanguageActivity extends BaseActivity {
         lang_selected = "en";
         PreferenceHelper.setValue(getApplicationContext(),lang_selected);
         PreferenceHelper.setFirstTimeValue(this,false);
-        setConfig(getApplicationContext(),lang_selected);
+//        setConfig(getApplicationContext(),lang_selected);
+        setNewLocale(SplashLanguageActivity.this, lang_selected);
        Intent intent=new Intent(getApplicationContext(), LoginTraderUserActivity.class);
        // Intent intent=getBaseContext().getPackageManager().getLaunchIntentForPackage(getBaseContext().getPackageName());
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

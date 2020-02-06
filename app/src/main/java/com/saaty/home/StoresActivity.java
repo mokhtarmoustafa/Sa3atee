@@ -107,6 +107,7 @@ public class StoresActivity extends BaseActivity implements OnItemClickInterface
    List<Integer> ids=new ArrayList<>();
    @BindView(R.id.nav_filter_id) ImageView navFilterImg;
    Dialog mDialog;
+   private String currentLanguage="";
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -117,6 +118,10 @@ public class StoresActivity extends BaseActivity implements OnItemClickInterface
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
         toolbarBackImg.setImageResource(R.drawable.nav_home);
 
+        if(PreferenceHelper.getValue(getApplicationContext()).equals("en"))
+        currentLanguage="en";
+                else
+            currentLanguage="ar";
 
         setSupportActionBar(toolbar);
        // ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open_drawer, R.string.close_drawer);
@@ -269,8 +274,16 @@ public class StoresActivity extends BaseActivity implements OnItemClickInterface
         for(DataArrayModel d: storesList){
             //or use .equal(text) with you want equal match
             //use .toLowerCase() for better matches
-            if(d.getStoreArName().toLowerCase().contains(text.toLowerCase())){
+            if(currentLanguage=="ar")
+            { if(d.getStoreArName().toLowerCase().contains(text.toLowerCase())){
                 temp.add(d);
+            }}
+
+            else
+            {
+                if(d.getStoreEnName().toLowerCase().contains(text.toLowerCase())){
+                    temp.add(d);
+                }
             }
         }
         //update recyclerview
@@ -282,9 +295,22 @@ public class StoresActivity extends BaseActivity implements OnItemClickInterface
         for(DataArrayModel d: newProducts){
             //or use .equal(text) with you want equal match
             //use .toLowerCase() for better matches
-            if(d.getArName().toLowerCase().contains(text.toLowerCase())){
-                temp.add(d);
+            if(currentLanguage=="ar")
+            {
+                if(d.getArName().toLowerCase().contains(text.toLowerCase())){
+                    temp.add(d);
+                }
             }
+
+            else
+            {
+
+                    if(d.getEnName().toLowerCase().contains(text.toLowerCase())){
+                        temp.add(d);
+                    }
+
+            }
+
         }
         //update recyclerview
         storeProductAdapter.updateList(temp);
