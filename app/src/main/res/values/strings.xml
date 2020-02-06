@@ -58,7 +58,7 @@
     <string name="stores_toolbar">Stores</string>
     <string name="empty_data">not Data found</string>
     <string name="product_price">10</string>
-    <string name="time">sice 20 mins</string>
+    <string name="time">since 20 mins</string>
     <string name="product_name">Watch</string>
     <string name="product_desc">udfv dkhcgvfh djifgv dihvgvu diduf   fuhcgcu dsihgc  odpsoijciuviudj cvudfhyvujhcui djvhdyvchuid</string>
     <string name="watch_imges">Watch Images</string>
@@ -85,7 +85,7 @@
     <string name="cancel">Cancel</string>
     <string name="select_language">Select Language:</string>
     <string name="address_txt">Address:</string>
-    <string name="address_value">Streat,Area,Country</string>
+    <string name="address_value">Street,Area,Country</string>
     <string name="website">Website:</string>
     <string name="website_value">www.company.com</string>
     <string name="email_value">company@gmail.com</string>
@@ -123,7 +123,7 @@
     <string name="upload_store_img">You must upload image for store:</string>
     <string name="create_new_account">Create New Account</string>
     <string name="product_imges">Product Images:</string>
-    <string name="log_out">Log out of saaty</string>
+    <string name="log_out">Log out </string>
     <string name="yes">Yes</string>
     <string name="dismiss">Cancel</string>
     <string name="enter_image_please">Please enter image of store</string>

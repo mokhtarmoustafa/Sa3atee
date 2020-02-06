@@ -47,9 +47,11 @@ public class SettingActivity extends BaseActivity {
         if (PreferenceHelper.getValue(getApplicationContext()).equals("ar")) {
             arrowArabic.setVisibility(View.VISIBLE);
             arrowEnglish.setVisibility(View.GONE);
+            languageSelected.setText(getResources().getString(R.string.arabic_lang));
         } else if (PreferenceHelper.getValue(getApplicationContext()).equals("en")) {
             arrowArabic.setVisibility(View.GONE);
             arrowEnglish.setVisibility(View.VISIBLE);
+            languageSelected.setText(getResources().getString(R.string.english_lang));
         }
 
         toolbarTxt.setText(getString(R.string.setting));
@@ -78,15 +80,17 @@ public class SettingActivity extends BaseActivity {
                     lang_selected = "ar";
                     PreferenceHelper.setValue(getApplicationContext(), lang_selected);
 //                    setConfig(getApplicationContext(), lang_selected);
-//                    languageSelected.setText("Arabic");
+
                     setNewLocale(SettingActivity.this, lang_selected);
+//                    languageSelected.setText(getResources().getString(R.string.arabic_lang));
 
                 } else if (which == 1) {
                     lang_selected = "en";
                     PreferenceHelper.setValue(getApplicationContext(), lang_selected);
 //                    setConfig(getApplicationContext(), lang_selected);
-//                    languageSelected.setText("English");
+
                     setNewLocale(SettingActivity.this, lang_selected);
+//                    languageSelected.setText(getResources().getString(R.string.english_lang));
 
                 }
                 Intent intent = getBaseContext().getPackageManager().getLaunchIntentForPackage(getBaseContext().getPackageName());

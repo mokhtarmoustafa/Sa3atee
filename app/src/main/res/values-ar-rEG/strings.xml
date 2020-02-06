@@ -58,7 +58,7 @@
     <string name="stores_toolbar">المتاجر</string>
     <string name="empty_data">لا توجد بيانات</string>
     <string name="product_price">10</string>
-    <string name="time">sice 20 mins</string>
+    <string name="time">منذ 20 دقيقة</string>
     <string name="product_name">ساعة</string>
     <string name="product_desc">نايبا ينراتار سنؤاتؤرا</string>
     <string name="watch_imges">صور المنتج</string>
@@ -85,7 +85,7 @@
     <string name="cancel">الغاء</string>
     <string name="select_language">اختر اللغة:</string>
     <string name="address_txt">العنوان:</string>
-    <string name="address_value">Streat,Area,Country</string>
+    <string name="address_value">الشارع، المنطقة، البلد</string>
     <string name="website">الموقع الالكتروني:</string>
     <string name="website_value">www.company.com</string>
     <string name="email_value">company@gmail.com</string>
@@ -111,9 +111,9 @@
     <string name="used_products">المنتجات المستعمله</string>
     <string name="watches">الساعات</string>
     <string name="store_desc">اكتب وصف للمتجر</string>
-    <string name="edit_ads">Edit Ads</string>
-    <string name="state">State:</string>
-    <string name="category">Category:</string>
+    <string name="edit_ads">تعديل الإعلانات</string>
+    <string name="state">حالة:</string>
+    <string name="category">الفئة:</string>
     <string name="message_name">Ahmed Mohamed</string>
     <string name="received">الواردة</string>
     <string name="reply_with_message">رد برسالة</string>
@@ -123,5 +123,10 @@
     <string name="upload_store_img">من فضلك حمل صوره للمتجر:</string>
     <string name="create_new_account">انشاء حساب جديد</string>
     <string name="product_imges">صور المنتج:</string>
+    <string name="log_out">تسجيل الخروج</string>
+    <string name="logout_msg">هل أنت متأكد من تسجيل الخروج من ساعتي !!</string>
+    <string name="enter_image_please">الرجاء إدخال صورة المتجر</string>
+    <string name="dismiss">إلغاء</string>
+    <string name="yes">نعم</string>
 
 </resources>
