@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Saaty</string>
     <string name="choose_lang">Choose Language</string>
-    <string name="arabic_lang">العربيه </string>
+    <string name="arabic_lang">Arabic </string>
     <string name="english_lang">English</string>
     <string name="email_input">Email</string>
     <string name="password_input">Password</string>

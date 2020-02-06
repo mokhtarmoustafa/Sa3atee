@@ -35,6 +35,9 @@ public class SettingActivity extends BaseActivity {
     ImageView arrowArabic;
     @BindView(R.id.toolbar_txt_id)
     TextView toolbarTxt;
+    @BindView(R.id.toolbar_back_left_btn_id)
+    ImageView ivBack;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +53,13 @@ public class SettingActivity extends BaseActivity {
         }
 
         toolbarTxt.setText(getString(R.string.setting));
+
+        ivBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 
     @OnClick(R.id.language_layout_id)
@@ -58,7 +68,7 @@ public class SettingActivity extends BaseActivity {
     }
 
     private void showLanguageDialog() {
-        String[] items = {"Arabic", "English"};
+        String[] items = {getResources().getString(R.string.arabic_lang), getResources().getString(R.string.english_lang)};
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(getString(R.string.select_language));
         builder.setItems(items, new DialogInterface.OnClickListener() {

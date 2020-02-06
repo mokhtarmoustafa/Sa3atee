@@ -2,11 +2,11 @@
     <string name="app_name">ساعتي</string>
     <string name="choose_lang">أختار اللغة</string>
     <string name="arabic_lang">العربيه </string>
-    <string name="english_lang">English</string>
+    <string name="english_lang">الأنجليزية</string>
     <string name="email_input">الايميل</string>
     <string name="password_input">كلمه المرور</string>
     <string name="save_info_login">حفظ معلومات التسجيل</string>
-    <string name="login_btn">Login</string>
+    <string name="login_btn">تسجيل الدخول</string>
     <string name="login_visitor_btn">الدخول كزائر</string>
     <string name="forget_password_txt">نسيت كلمة المرور?</string>
     <string name="create_account_txt">انشاء حساب جديد</string>
