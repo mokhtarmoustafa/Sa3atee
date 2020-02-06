@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/user_name_input_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textAlignment="viewStart"
+                android:hint="@string/user_name_input"
+                android:drawableStart="@drawable/signup_name"
+                android:drawablePadding="15dp"
+                android:textSize="14sp"
+                android:inputType="text"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone_input_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/user_name_input_id"
+                android:hint="@string/phone_number_input"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/signup_phone"
+                android:drawablePadding="15dp"
+                android:textAlignment="viewStart"
+                android:textSize="14sp"
+                android:inputType="number"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_input_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/phone_input_id"
+                android:hint="@string/email_input"
+                android:drawableStart="@drawable/signin_email"
+                android:drawablePadding="15dp"
+                android:textAlignment="viewStart"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:inputType="textEmailAddress"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_input_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/email_input_id"
+                android:hint="@string/password_input"
+                android:drawableStart="@drawable/signin_password"
+                android:drawablePadding="15dp"
+                android:textAlignment="viewStart"
+                android:textSize="14sp"
+                android:inputType="textPassword"/>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirm_password_input_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/password_input_id"
+                android:hint="@string/confirm_password_input"
+                android:drawableStart="@drawable/signin_password"
+                android:drawableEnd="@drawable/signup_confirm_password"
+                android:drawablePadding="15dp"
+                android:textAlignment="viewStart"
+                android:textSize="14sp"
+                android:inputType="textPassword"/>
+
+            <CheckBox
+                android:id="@+id/accept_terms_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/accept_terms_txt"
+                app:layout_constraintTop_toBottomOf="@id/confirm_password_input_id"
+                app:layout_constraintStart_toStartOf="parent"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/confirm_btn_id"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/accept_terms_id"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/confirm"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="10dp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

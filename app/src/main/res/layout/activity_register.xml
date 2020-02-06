@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginAndRegister.RegisterActivity"
+    android:background="@color/white">
+
+
+    <include
+        android:id="@+id/action_bar_root"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/toolbar_layout"/>
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/action_bar_root"
+        android:layout_marginBottom="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/register_img_id"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/signup_photo_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="60dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/logo_img_id"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                app:layout_constraintStart_toStartOf="@id/register_img_id"
+                app:layout_constraintEnd_toEndOf="@id/register_img_id"
+                app:layout_constraintBottom_toBottomOf="@id/register_img_id"
+                android:layout_marginBottom="120dp"
+                android:src="@drawable/color" />
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/register_img_id"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/tab_layout_id"
+                app:tabSelectedTextColor="@color/blue"
+                app:tabTextColor="@android:color/darker_gray"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:scrollbars="horizontal"
+                android:background="@drawable/white_background"
+                app:tabMode="scrollable"
+                app:tabGravity="center"
+                app:tabIndicatorFullWidth="true"
+                android:elevation="6dp"
+                app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+               />
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager_id"
+                android:layout_width="0dp"
+                android:layout_height="320dp"
+                android:padding="15dp"
+                android:background="@drawable/white_background"
+                app:layout_constraintStart_toStartOf="@id/tab_layout_id"
+                app:layout_constraintEnd_toEndOf="@id/tab_layout_id"
+                app:layout_constraintTop_toBottomOf="@id/tab_layout_id"
+                android:elevation="6dp"/>
+
+
+<!--          <androidx.viewpager.widget.ViewPager-->
+<!--              android:id="@+id/view_pager_id"-->
+<!--              android:layout_width="0dp"-->
+<!--              android:layout_height="wrap_content"-->
+<!--              android:background="@drawable/white_background"-->
+<!--              android:elevation="6dp"-->
+<!--              app:layout_constraintStart_toStartOf="@id/tab_layout_id"-->
+<!--              app:layout_constraintEnd_toEndOf="@id/tab_layout_id"-->
+<!--              app:layout_constraintTop_toBottomOf="@id/tab_layout_id"-->
+<!--              app:layout_constraintBottom_toBottomOf="parent"/>-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

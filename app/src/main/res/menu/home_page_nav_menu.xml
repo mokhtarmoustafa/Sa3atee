@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shownIn="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+          android:id="@+id/nav_home_page"
+            android:icon="@drawable/sidemenu_home"
+            android:title="@string/home_page"
+            />
+
+        <item
+            android:id="@+id/nav_my_account"
+            android:icon="@drawable/sidemenu_profile"
+            android:title="@string/my_account"
+            />
+
+        <item
+            android:id="@+id/nav_wishlist"
+            android:icon="@drawable/sidemenu_wishlist"
+            android:title="@string/wishlist"
+            />
+
+        <item
+            android:id="@+id/nav_my_ads"
+            android:icon="@drawable/sidemenu_ads"
+            android:title="@string/my_ads"
+            />
+
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/sidemenu_messages"
+            android:title="@string/message"
+            />
+
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/sidemenu_setting"
+            android:title="@string/setting"
+            />
+
+        <item
+            android:id="@+id/nav_about_app"
+            android:icon="@drawable/sidemenu_about_app"
+            android:title="@string/about_app"
+            />
+
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/sidemenu_about_us"
+            android:title="@string/about_us"
+            />
+
+        <item
+            android:id="@+id/nav_contact_us"
+            android:icon="@drawable/sidemenu_contact"
+            android:title="@string/contact_us"
+            />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/sidemenu_signout"
+            android:title="@string/sign_out"
+            />
+
+    </group>
+</menu>

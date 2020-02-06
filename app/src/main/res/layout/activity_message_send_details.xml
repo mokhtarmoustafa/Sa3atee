@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sideMenuScreen.messages.MessageSendDetailsActivity"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/action_bar_root"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/toolbar_layout"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/store_img_id"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:src="@drawable/sidemenu_photo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/action_bar_root"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:scaleType="centerCrop"
+        />
+
+
+    <TextView
+        android:id="@+id/message_to"
+        app:layout_constraintStart_toEndOf="@id/store_img_id"
+        app:layout_constraintTop_toTopOf="@id/store_img_id"
+        app:layout_constraintBottom_toTopOf="@id/user_name_id"
+        android:drawablePadding="18dp"
+        android:text="@string/message_to"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/user_name_id"
+        app:layout_constraintBottom_toBottomOf="@id/store_img_id"
+        app:layout_constraintTop_toBottomOf="@id/message_to"
+        app:layout_constraintStart_toStartOf="@id/message_to"
+        android:drawablePadding="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/user_name"
+       />
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/message_body_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/store_img_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/store_img_id"
+        android:drawableStart="@drawable/message_body"
+        android:drawablePadding="15dp"
+        android:text="@string/product_desc"
+        android:layout_marginTop="50dp"
+        android:ellipsize="end"
+        android:maxLines="2"/>
+
+
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/delete_btn_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/store_img_id"
+        app:layout_constraintTop_toBottomOf="@id/message_body_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/white"
+        android:text="@string/delete"
+        android:background="@color/blue"/>
+
+
+    <ProgressBar
+        android:id="@+id/progress_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

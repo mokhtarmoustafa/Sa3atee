@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.google.android.material.appbar.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainPage_app_bar1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    android:background="@color/white"
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:theme="@style/AppTheme.PopupOverlay"
+        xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+        <TextView
+            android:id="@+id/toolbar_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/forget_pass"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/toolbar_back_left_btn_id"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_arrow_back_black_24dp" />
+
+
+        <ImageView
+            android:id="@+id/toolbar_home_id"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/nav_home"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+             />
+
+
+        <ImageView
+            android:id="@+id/toolbar_edit_id"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/nav_edit"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            tools:ignore="MissingPrefix"
+            android:visibility="gone" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+</com.google.android.material.appbar.AppBarLayout>

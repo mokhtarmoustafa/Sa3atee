@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.saaty">
+    <!-- android:targetSandboxVersion="1" -->
+    <!-- <dist:module dist:instant="true" /> -->
+    <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".sideMenuScreen.messages.MessageActivity2"></activity>
+        <activity android:name=".sideMenuScreen.myAds.AdsActivity" />
+        <activity android:name=".sideMenuScreen.messages.MessageSendDetailsActivity" />
+        <activity android:name=".sideMenuScreen.messages.SendMessageActivity" />
+        <activity android:name=".sideMenuScreen.messages.MessageDetailsActivity" />
+        <activity android:name=".sideMenuScreen.messages.MessageActivity" />
+        <activity
+            android:name=".sideMenuScreen.myAds.EditAdsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sideMenuScreen.myAds.MyAdsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sideMenuScreen.ContactUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sideMenuScreen.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sideMenuScreen.AboutAppActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sideMenuScreen.wishlist.WishlistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sideMenuScreen.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sideMenuScreen.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sideMenuScreen.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sideMenuScreen.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".productDetails.SendMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".productDetails.ProductDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.StoresProduct.StoresProductsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".splash.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".home.StoresActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".loginAndRegister.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".password.ResetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".password.VerificationCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".password.ForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".loginAndRegister.LoginTraderUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".splash.SplashLanguageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

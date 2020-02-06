@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".password.VerificationCodeActivity"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/action_bar_root"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/toolbar_layout"/>
+
+
+    <ImageView
+        android:id="@+id/forget_password_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/action_bar_root"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/forget_password_photo_2"/>
+
+
+    <TextView
+        android:id="@+id/enter_phone_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/verify_code_txt"
+        android:gravity="center"
+        android:maxLines="3"
+         android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/verify_code_input_id"
+        app:layout_constraintEnd_toEndOf="@id/verify_code_input_id"
+        app:layout_constraintTop_toBottomOf="@id/forget_password_img"
+        android:layout_marginTop="20dp"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/verify_code_input_id"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enter_phone_txt"
+        android:hint="@string/enter_code"
+        android:drawableStart="@drawable/verify_icon"
+        android:drawablePadding="15dp"
+        android:inputType="number"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/confirm_btn_id"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="@id/verify_code_input_id"
+        app:layout_constraintEnd_toEndOf="@id/verify_code_input_id"
+        app:layout_constraintTop_toBottomOf="@+id/verify_code_input_id"
+        android:text="@string/confirm"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/confirm_btn_id"
+        app:layout_constraintStart_toStartOf="@id/confirm_btn_id"
+        app:layout_constraintEnd_toEndOf="@id/confirm_btn_id"
+        android:text="@string/resend_code_txt"
+        android:textColor="@color/blue"
+        android:drawableEnd="@drawable/refresh_code"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="15dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
